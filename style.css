@@ -341,3 +341,10 @@ nav{
   background: brown;
   color: #f1f1f1;
 }
+
+/* Ligne milieur */
+
+.ligne-milieu{
+  grid-area: 1 / 3 / -1 / 4 ;
+  border-right: 1px solid #333;
+}
