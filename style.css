@@ -36,6 +36,7 @@ nav{
 .liste-nav{
   background: #333;
   background: linear-gradient(to bottom, #333, #626262);
+  border-bottom: 1px solid #f1f1f1;
   height: 70px;
   width: 100%;
   display: flex;
@@ -72,4 +73,24 @@ nav{
   width: 100%;
 }
 
-/* --------  --------- */
+/* -------- Media query Navigation --------- */
+
+@media screen and (max-width: 700px){
+  .logo-menu {
+    display: block;
+  }
+  .liste-nav{
+    display: none;
+    flex-direction: column;
+    height: auto;
+  }
+  .liste-nav.active{
+    display: block;
+  }
+  .item-nav{
+    height: 70px;
+  }
+  .item-nav:nth-child(1){
+    margin-top: 70px;
+  }
+}
