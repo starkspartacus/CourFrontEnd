@@ -502,3 +502,34 @@ nav{
     border: 1px solid #333;
   }
 }
+
+/* Section Parallax */
+
+.parallax{
+  width: 100%;
+  height: 300px;
+  background-image: url(./resources/parallax-large-flou.jpg);
+  color: #f1f1f1;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parallax p{
+  font-size: 65px;
+  
+}
+
+.parallax span{
+  display: block;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 400px){
+  .parallax p{
+    font-size: 55px;
+  }
+}
