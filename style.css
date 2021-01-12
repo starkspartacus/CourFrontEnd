@@ -537,46 +537,49 @@ nav{
 /* Section carte Tarifs */
 
 .carte-tarif{
-  display: flex;
-  height: 600px;
-  width: 100%;
   margin: 40px 20px;
-  padding: 10px 0;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  flex-wrap: wrap;
+  padding-bottom: 150px 0 20px;
+  border-bottom: 1px dashed #333;
   font-family: sans-serif;
+  
 }
 
 .carte-tarif h3{
-  position: absolute;
-  top: -30px;
-  font-size: 30px;
+ text-align: center;
+ font-size: 45px;
+ margin: 120px 0 20px;
+ padding: 0 30px;
 }
 
 hr{
-  position: absolute;
-  color: #333333;
-  top: 30px;
-  width: 100px;
+  width: 200px;
+  margin: 20px auto 70px;
 }
 
 .container-tarif{
-  line-height: 2.3;
-  margin: 10px 16px;
-  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.cartes-tarifs{
+  width: 350px;
   height: auto;
-  width: 13%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #333;
   box-shadow: 0 0 8px;
   transition: all 0.2s ease-in-out;
+  margin: 10px 16px;
+  line-height: 2.3; 
 }
 /* Animation container Tarif */
-.container-tarif:hover{
+.cartes-tarifs:hover{
   transform: translateY(-15px);
 }
 
-.container-tarif h4{
+.cartes-tarifs h4{
   text-align: center;
   font-size: 20px;
   background: crimson;
@@ -584,18 +587,18 @@ hr{
   padding: 12px;
 }
 
-.container-tarif span{
+.cartes-tarifs span{
   display: block;
   text-align: center;
   font-weight: bolder;
 
 }
 
-.container-tarif p:nth-child(odd){
+.cartes-tarifs p:nth-child(odd){
   background: rgb(243, 238, 238);
 }
 
-.container-tarif a{
+.cartes-tarifs a{
   text-decoration: none;
   color: #000;
   display: block;
@@ -612,7 +615,17 @@ hr{
   transition: all 0.2s ease-in-out;
 }
 
-.container-tarif a{
-  
+.cartes-tarifs a:hover{
+  background: darkred;
+  color: #f1f1f1;
 }
 
+@media screen and (max-width: 1855px){
+
+  .cartes-tarifs{
+    display: inline-block;
+    flex-direction: column;
+  }
+
+
+}
