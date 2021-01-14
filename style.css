@@ -620,12 +620,4 @@ hr{
   color: #f1f1f1;
 }
 
-@media screen and (max-width: 1855px){
 
-  .cartes-tarifs{
-    display: inline-block;
-    flex-direction: column;
-  }
-
-
-}
